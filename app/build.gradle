@@ -12,6 +12,7 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags "-std=c++11"
+                arguments "-DALSOFT_UTILS=OFF", "-DALSOFT_EXAMPLES=OFF", "-DALSOFT_TESTS=OFF", "-DALSOFT_CONFIG=OFF", "-DALSOFT_HRTF_DEFS=OFF", "-DALSOFT_AMBDEC_PRESETS=OFF", "-DALSOFT_INSTALL=OFF"
             }
         }
     }
